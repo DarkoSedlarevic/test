@@ -1,0 +1,45 @@
+<h1 id="pop-up">hello world!</h1>
+<h2>atom live reload! is it working? or not?</h2>
+
+<p>year: <span id="serial-num-year">_ _ _ _</span></p>
+<p>month: <span id="serial-num-month">_ _ _ _</span></p>
+
+<p>production No: <span id="serial-num">_ _ _ _</span></p>
+
+<br><br>
+<p style="font-weight: bold">full serial: <span id="full-serial">_ _ </span><span id="just-serial">_ _ _ _</span></p>
+
+
+
+<button id="add-count-btn" type="button" name="button">Add one</button>
+<button id="substract-count-btn" type="button" name="button">remove one</button>
+
+<button id="transaction-count-btn" type="button" name="button">add one with transaction</button>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBv7L8HMRm_pN_dbN5bSrI7YqqVkkaDLCc",
+    authDomain: "seiko-thing.firebaseapp.com",
+    databaseURL: "https://seiko-thing.firebaseio.com",
+    projectId: "seiko-thing",
+    storageBucket: "seiko-thing.appspot.com",
+    messagingSenderId: "679921693511",
+    appId: "1:679921693511:web:452417f07a77c5935c9262",
+    measurementId: "G-50GKH5QSS3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="app.js"></script>
